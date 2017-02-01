@@ -1,0 +1,13 @@
+menuconfig HCSR04
+	bool
+	prompt "HCSR04 Drivers"
+	default y
+	help
+	  Include HCSR04 drivers in system config
+
+config HCSR04_DW_INIT_PRIORITY
+	int
+	default 60
+	prompt "Init priority"
+	help
+	  Device driver initialization priority.
